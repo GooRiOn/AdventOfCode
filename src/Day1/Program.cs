@@ -29,8 +29,6 @@ var numbers = textReports
     .Select(t => Convert.ToInt32(t))
     .ToList();
 
-var group = new List<(int, int, int)>();
-
 for (var i = 0; i < numbers.Count - 3; i++)
 {
     var sumLeft = numbers[i] + numbers[i+1] + numbers[i+2];
